@@ -1,0 +1,83 @@
+<!-- <ul nz-menu [nzMode]="'horizontal'">
+  <li nz-menu-item [nzSelected]="true">
+    <span>首页</span>
+  </li>
+  <li nz-submenu>
+    <span title>应用中心</span>
+    <ul>
+      <li nz-menu-item>Geovisearth</li>
+      <li nz-menu-group>
+        <span title>应用仓库</span>
+        <ul>
+          <li nz-menu-item>应用详情</li>
+        </ul>
+      </li>
+      <li nz-menu-group>
+        <span title>插件仓库</span>
+        <ul>
+          <li nz-menu-item>插件详情</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li nz-submenu>
+    <span title>二此开发支持中心</span>
+    <ul>
+      <li nz-menu-item>二次开发手册/部署手册</li>
+      <li nz-menu-item>API接口</li>
+      <li nz-menu-item>示例仓库</li>
+      <li nz-menu-item>展示</li>
+      <li nz-menu-item>沙盒</li>
+      <li nz-menu-item>应用孵化器</li>
+    </ul>
+  </li>
+  <li nz-menu-item>
+    <span>开发者论坛</span>
+  </li>
+</ul>` -->
+<div class="logo">标准版webGL</div>
+<ul class="nav-content" nz-menu [nzTheme]="'dark'" [nzMode]="'horizontal'" style="line-height: 64px;float:right;">
+  <li nz-menu-item>
+    <a [routerLink]="['/']">首页</a>
+  </li>
+  <li nz-submenu>
+    <span title>应用中心</span>
+    <ul>
+      <li nz-menu-item>Geovisearth</li>
+      <li nz-menu-group>
+        <span title>应用仓库</span>
+        <ul>
+          <li nz-menu-item>应用详情</li>
+        </ul>
+      </li>
+      <li nz-menu-group>
+        <span title>插件仓库</span>
+        <ul>
+          <li nz-menu-item>插件详情</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li nz-submenu>
+    <span title>二此开发支持中心</span>
+    <ul>
+      <li nz-menu-item>
+        <span title>
+          <a [routerLink]="['./secondDev/files']">二次开发手册/部署手册</a>
+        </span>
+      </li>
+      <li nz-menu-item>API接口</li>
+      <li nz-menu-item>示例仓库</li>
+      <li nz-menu-item>展示</li>
+      <li nz-menu-item>
+        <span title>
+          <a [routerLink]="['./secondDev/sandBox']">沙盒</a>
+        </span>
+      </li>
+      <li nz-menu-item>应用孵化器</li>
+    </ul>
+  </li>
+  <li nz-menu-item>
+    <span>开发者论坛</span>
+  </li>
+</ul>

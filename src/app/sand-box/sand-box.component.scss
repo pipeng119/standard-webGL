@@ -1,0 +1,24 @@
+.show-box{
+    display:flex;
+    flex-wrap:wrap;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.functional-box{
+    width:100%;
+    height: 60px;
+}
+
+.file,.effect{
+    width: 48%;
+    height: 80%;
+    border: 1px solid #000;
+}
+
+.scroll-01{
+    flex:1;
+    height: 80%;
+    background: red;
+}
