@@ -10,7 +10,7 @@ export class DevModelComponent implements OnInit {
   devList: Array<string> = [];
 
   constructor() {
-    this.devList = ['http://placehold.it/400x200','http://placehold.it/400x200','http://placehold.it/400x200','http://placehold.it/400x200']
+    this.devList = ['http://placehold.it/200x300','http://placehold.it/200x300','http://placehold.it/200x300','http://placehold.it/200x300']
   }
 
   ngOnInit() {

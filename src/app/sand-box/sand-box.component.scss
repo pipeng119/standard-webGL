@@ -1,40 +1,44 @@
 $boxBorder: 1px solid #000;
 
-.sand-box{
+.sand-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.code-box {
+  width: 50%;
+  height: 100%;
+  border: $boxBorder;
+  box-sizing: border-box;
+
+  .head,
+  .code-btns {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+
+    button {
+      margin-right: 10px;
+    }
+
+  }
+
+  .code-btns {
+    justify-content: flex-start;
+  }
+
+  .code-content {
     width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-}
+  }
 
-.code-box{
-    flex-basis: 50%;
-    height: 100%;
-    border: $boxBorder;
-    box-sizing: border-box;
-    .head,.code-btns{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        height: 60px;
-        button{
-            margin-right: 10px;
-        }
-
-    }
-    .code-btns{
-        justify-content: flex-start;
-    }
-
-    .code-content{
-        width: 100%;
-    }
-    
 }
 
 
-.effect{
-    flex:1;
-    height: 100%;
-    border: $boxBorder;
+.effect {
+  flex: 1;
+  height: 100%;
+  border: $boxBorder;
 }
