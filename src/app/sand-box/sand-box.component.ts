@@ -51,12 +51,12 @@ export class SandBoxComponent implements OnInit {
     let frameWindow = this.frameElement.nativeElement.contentWindow;
     let fromDocument = frameWindow.document;
     console.log("fromDocument",fromDocument)
-    fromDocument.documentElement.innerHTML = this.htmlCode;
+    // fromDocument.documentElement.innerHTML = this.htmlCode;
 
-    // let script = document.createElement("script");
-    // script.type = "text/javascript";
-    // script.innerHTML = this.jsCode;
-    // fromDocument.body.appendChild(script)
+    let script = document.createElement("script");
+    script.type = "text/javascript";
+    script.innerHTML = this.jsCode;
+    fromDocument.body.appendChild(script)
 
 
   }
