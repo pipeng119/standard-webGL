@@ -15,6 +15,10 @@ import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { SandBoxComponent } from './sand-box/sand-box.component';
 import { SecondDevFileComponent } from './second-dev-file/second-dev-file.component';
+import { FunctionalComponent } from './home/functional/functional.component';
+import { DevModelComponent } from './home/dev-model/dev-model.component';
+import { ApplycationComponent } from './home/applycation/applycation.component';
+import { FooterComponent } from './home/footer/footer.component';
 
 registerLocaleData(zh);
 
@@ -25,6 +29,10 @@ registerLocaleData(zh);
     HomeComponent,
     SandBoxComponent,
     SecondDevFileComponent,
+    FunctionalComponent,
+    DevModelComponent,
+    ApplycationComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

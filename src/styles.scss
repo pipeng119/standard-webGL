@@ -32,3 +32,24 @@ ul,ol,li{
 a{
     color: rgba(255,255,255,.65);
 }
+
+section,article{
+  width: 80%;
+  margin: 40px auto;
+  h3 {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+
+    margin {
+      top: 10px;
+      bottom: 20px;
+    }
+  }
+
+  h4{
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+}

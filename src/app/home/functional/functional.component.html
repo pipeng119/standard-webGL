@@ -1,0 +1,12 @@
+<section class="functional">
+  <h3>功能与服务</h3>
+  <ul class="detail-list">
+    <li *ngFor="let item of funcList">
+      <img [src]="item.imgUrl">
+      <h4>{{item.title}}</h4>
+      <p>{{item.dec}}
+        <a [href]="item.moreUrl"></a>
+      </p>
+    </li>
+  </ul>
+</section>

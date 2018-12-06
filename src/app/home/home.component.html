@@ -1,3 +1,13 @@
-<p>
-  home works!
-</p>
+<div class="home-box box">
+  <div class="banner">
+    <nz-carousel [nzEffect]="'fade'">
+      <div nz-carousel-content *ngFor="let index of array">
+        <h3>{{index}}</h3>
+      </div>
+    </nz-carousel>
+  </div>
+  <app-functional></app-functional>
+  <app-dev-model></app-dev-model>
+  <app-applycation></app-applycation>
+  <app-footer></app-footer>
+</div>

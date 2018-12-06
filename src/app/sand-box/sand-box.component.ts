@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { Example } from '../model/Example';
 @Component({
   selector: 'app-sand-box',
   templateUrl: './sand-box.component.html',
@@ -49,11 +48,12 @@ export class SandBoxComponent implements OnInit {
 
   run() {
     console.log(this.jsCode, this.htmlCode)
-    // console.log(1);
-    // console.log(this.frameElement.nativeElement.contentWindow.document);
     let frameWindow = this.frameElement.nativeElement.contentWindow;
     let fromDocument = frameWindow.document;
-    fromDocument.writeln(`<script>${this.jsCode}</script>`)
+    let script = document.createElement("script");
+    script.type = "text/javascript";
+    script.innerHTML = this.jsCode;
+    fromDocument.body.appendChild(script)
   }
 
 }

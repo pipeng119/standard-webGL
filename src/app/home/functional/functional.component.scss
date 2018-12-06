@@ -1,0 +1,22 @@
+.functional {
+    
+  
+    .detail-list {
+      display: flex;
+      li{
+          flex: 1;
+          height: 300px;
+          display: flex;
+          flex-direction : column;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 60px;
+          box-sizing: border-box;
+          img{
+              width: 100px;
+              height: 100px;
+          }
+      }
+    }
+  }
+  
