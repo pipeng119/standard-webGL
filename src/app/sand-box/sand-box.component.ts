@@ -16,13 +16,13 @@ export class SandBoxComponent implements OnInit {
   tabs = [
     {
       active: true,
-      name  : 'Tab 1',
-      icon  : 'apple'
+      name: 'Tab 1',
+      icon: 'apple'
     },
     {
       active: false,
-      name  : 'Tab 2',
-      icon  : 'android'
+      name: 'Tab 2',
+      icon: 'android'
     }
   ];
   // urlInfo = 'assets/demo.html';
@@ -50,10 +50,15 @@ export class SandBoxComponent implements OnInit {
     console.log(this.jsCode, this.htmlCode)
     let frameWindow = this.frameElement.nativeElement.contentWindow;
     let fromDocument = frameWindow.document;
-    let script = document.createElement("script");
-    script.type = "text/javascript";
-    script.innerHTML = this.jsCode;
-    fromDocument.body.appendChild(script)
+    console.log("fromDocument",fromDocument)
+    fromDocument.documentElement.innerHTML = this.htmlCode;
+
+    // let script = document.createElement("script");
+    // script.type = "text/javascript";
+    // script.innerHTML = this.jsCode;
+    // fromDocument.body.appendChild(script)
+
+
   }
 
 }
