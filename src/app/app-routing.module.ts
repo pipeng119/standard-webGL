@@ -6,32 +6,22 @@ import { SandBoxComponent } from './sand-box/sand-box.component';
 
 const routes: Routes = [
   {
-    path: "",
+    path: '',
     component: HomeComponent,
     pathMatch: 'full'
   },
-  // {
-  //   path: "secondDev",
-  //   component: SecondDevFileComponent,
-  //   children: [
-  //     {
-  //       path: "files",
-  //       component: SecondDevFileComponent
-  //     },
-  //     {
-  //       path: "sandBox",
-  //       component: SandBoxComponent
-  //     }
-  //   ]
-  // },
   {
-    path: "secondDev/files",
+    path: 'secondDev',
+    component: SecondDevFileComponent,
+  },
+  {
+    path: 'secondDev/files',
     component: SecondDevFileComponent
   },
   {
-    path: "secondDev/sandBox",
+    path: 'secondDev/sandBox',
     component: SandBoxComponent
-  }
+  },
 ];
 
 @NgModule({
