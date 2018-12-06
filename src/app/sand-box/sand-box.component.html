@@ -1,17 +1,17 @@
-<div class="show-box">
+<!-- <div class="show-box">
     <div class="functional-box">
         <button (click)="run()" nz-button nzType="primary"></button>
     </div>
     <div class="file">
-      <!-- <codemirror [(ngModel)]="code" [config]="cmOptions">
-      </codemirror> -->
+      <codemirror [(ngModel)]="code" [config]="cmOptions">
+      </codemirror>
       <div>
         <button (click)="editFlag = 1" nz-button nzType="primary">JavaScript</button>
         <button (click)="editFlag = 2" nz-button nzType="primary">Html & Css</button>
-        <!-- <el-button [plain]="true" type="warning" (click)="editFlag = 2">Html & Css</el-button> -->
+        <el-button [plain]="true" type="warning" (click)="editFlag = 2">Html & Css</el-button>
       </div>
-      <!-- <app-edit-code #codeHtmlCss *ngIf="editFlag === 1"></app-edit-code>
-      <app-edit-code #codeJs *ngIf="editFlag === 2"></app-edit-code> -->
+      <app-edit-code #codeHtmlCss *ngIf="editFlag === 1"></app-edit-code>
+      <app-edit-code #codeJs *ngIf="editFlag === 2"></app-edit-code>
       <codemirror [(ngModel)]="jsCode" [config]="cmOptions" *ngIf="editFlag == 1"></codemirror>
       <codemirror [(ngModel)]="htmlCode" [config]="cmOptions" *ngIf="editFlag == 2"></codemirror>
     </div>
@@ -19,5 +19,26 @@
     <div class="effect">
       <iframe #frame src="assets/de-main/index.html" frameborder="0" width="100%" height="100%"></iframe>
     </div>
+  </div> -->
+
+<div class="sand-box">
+  <div class="code-box">
+    <div class="head">
+      <nz-button-group>
+        <button (click)="reset()" nz-button nzType="primary"><i nz-icon type="search"></i>重置</button>
+        <button (click)="run()" nz-button nzType="primary"><i nz-icon type="search"></i>运行</button>
+      </nz-button-group>
+    </div>
+    <div class="code-content">
+      <div class="code-btns">
+        <button (click)="editFlag = 1" nz-button nzType="primary">JavaScript</button>
+        <button (click)="editFlag = 2" nz-button nzType="primary">Html & Css</button>
+      </div>
+      <codemirror [(ngModel)]="jsCode" [config]="cmOptions" *ngIf="editFlag == 1"></codemirror>
+      <codemirror [(ngModel)]="htmlCode" [config]="cmOptions" *ngIf="editFlag == 2"></codemirror>
+    </div>
   </div>
-  
+  <div class="effect">
+    <!-- <iframe #frame src="assets/army-main/index.html" frameborder="0"></iframe> -->
+  </div>
+</div>
