@@ -14,19 +14,17 @@ export class SandBoxComponent implements OnInit {
   cmOptions: any = '';
 
   editFlag: number;
-  exampleList: Array<Example> = [
+  tabs = [
     {
-      id: 1,
-      background: "red"
+      active: true,
+      name  : 'Tab 1',
+      icon  : 'apple'
     },
     {
-      id: 2,
-      background: "blue"
-    },
-    {
-      id: 3,
-      background: "yellow"
-    },
+      active: false,
+      name  : 'Tab 2',
+      icon  : 'android'
+    }
   ];
   // urlInfo = 'assets/demo.html';
 
