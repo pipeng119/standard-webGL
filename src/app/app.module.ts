@@ -24,7 +24,7 @@ registerLocaleData(zh);
     NavComponent,
     HomeComponent,
     SandBoxComponent,
-    SecondDevFileComponent
+    SecondDevFileComponent,
   ],
   imports: [
     BrowserModule,

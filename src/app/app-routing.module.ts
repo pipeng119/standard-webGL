@@ -10,28 +10,28 @@ const routes: Routes = [
     component: HomeComponent,
     pathMatch: 'full'
   },
-  {
-    path: "secondDev",
-    component: SecondDevFileComponent,
-    children: [
-      {
-        path: "files",
-        component: SecondDevFileComponent
-      },
-      {
-        path: "sandBox",
-        component: SandBoxComponent
-      }
-    ]
-  },
   // {
-  //   path: "files",
-  //   component: SecondDevFileComponent
+  //   path: "secondDev",
+  //   component: SecondDevFileComponent,
+  //   children: [
+  //     {
+  //       path: "files",
+  //       component: SecondDevFileComponent
+  //     },
+  //     {
+  //       path: "sandBox",
+  //       component: SandBoxComponent
+  //     }
+  //   ]
   // },
-  // {
-  //   path: "sandBox",
-  //   component: SandBoxComponent
-  // }
+  {
+    path: "secondDev/files",
+    component: SecondDevFileComponent
+  },
+  {
+    path: "secondDev/sandBox",
+    component: SandBoxComponent
+  }
 ];
 
 @NgModule({
